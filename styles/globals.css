@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.debug {
+  border: 1px solid red;
+}
+
+/* styles.css */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent; /* Set the scrollbar colors */
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px; /* Set the scrollbar width */
+  height: 7px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 15px; /* Adjust thumb border radius */
+}
+
+.scrollbar:hover::-webkit-scrollbar-thumb {
+  @apply bg-hv_yellow;
+  background: #bebebe; /* Change thumb color on hover */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Set track background color */
+}
